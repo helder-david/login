@@ -84,21 +84,19 @@
 	</header>
 	<main>
 		<section class="login">
-		  <form>
-			<div class="input-group mb-3 input-group-sm inputs">
+			<div class="input-group mb-3 input-group-sm inputs" >
 			 <div class="input-group-prepend">
 			    <span class="input-group-text">Usuario</span>
 			 </div>
-			 <input type="text" class="form-control">
+			 <input type="text" class="form-control" id="usr">
 			</div>
-			<div class="input-group mb-3 input-group-sm inputs">
+			<div class="input-group mb-3 input-group-sm inputs" >
 			 <div class="input-group-prepend">
 			    <span class="input-group-text">Contraseña</span>
 			 </div>
-			 <input type="password" class="form-control">
+			 <input type="password" class="form-control" id="psw">
 			</div>
-			<button type="submit" class="btn btn-success">Ingresar</button>
-		</form>
+			<button type="submit" class="btn btn-success" onclick="ingreso()">Ingresar</button>
 
 		</section>
 	</main>
@@ -107,3 +105,4 @@
 	</footer>
 </body>
 </html>
+<script src="<?php echo base_url('assets/js/login.js') ?>"></script>
